@@ -11,7 +11,7 @@
 
 % zack_12335 = VarName1;
 % zack_12335(:, 2) = num2cell(VarName4);
-
+% 
 % zack_12325 = VarName1;
 % zack_12325(:, 2) = num2cell(VarName4);
 
@@ -65,11 +65,15 @@ for ii=2:6
     result_max(ii-1) = max(result_relate_delay(:, ii));
     result_min(ii-1) = min(result_relate_delay(:, ii));
 end
-    
+
+xele_vs_zeusing = result_relate_delay(:,6) - result_relate_delay(:, 2);
+
 clear cath_0_5_timestamp xeon_32016_timestamp zack_12345_timestamp zack_12335_timestamp zack_12325_timestamp zack_22235_timestamp;
 clear common_time_stamp cath_0_5_delay xeon_32016_delay zack_12345_delay zack_12335_delay zack_12325_delay zack_22235_delay;
 clear ii;
 % dfittool
+
+% xele_vs_zeusing_w24 = vertcat(xele_vs_zeusing_w24, xele_vs_zeusing);
 
 
 
