@@ -11,7 +11,7 @@
 
 % zack_12335 = VarName1;
 % zack_12335(:, 2) = num2cell(VarName4);
-% 
+
 % zack_12325 = VarName1;
 % zack_12325(:, 2) = num2cell(VarName4);
 
@@ -64,6 +64,10 @@ for ii=2:6
     result_mean(ii-1) = mean(result_relate_delay(:, ii));
     result_max(ii-1) = max(result_relate_delay(:, ii));
     result_min(ii-1) = min(result_relate_delay(:, ii));
+    
+    [p, x] = ecdf(result_relate_delay(:, ii));
+    x_67(ii-1) = x(max(find(p<=0.67))-1);
+    x_95(ii-1) = x(max(find(p<=0.95))-1);
 end
 
 xele_vs_zeusing = result_relate_delay(:,6) - result_relate_delay(:, 2);
@@ -74,6 +78,12 @@ clear ii;
 % dfittool
 
 % xele_vs_zeusing_w24 = vertcat(xele_vs_zeusing_w24, xele_vs_zeusing);
+
+[p, x] = ecdf(xele_vs_zeusing);
+x_67_xele_vs_zeusing = x(max(find(p<=0.67))-1);
+x_95_xele_vs_zeusing = x(max(find(p<=0.95))-1);
+
+clear p x;
 
 
 
