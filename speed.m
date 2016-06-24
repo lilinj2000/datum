@@ -77,7 +77,7 @@ clear common_time_stamp cath_0_5_delay xeon_32016_delay zack_12345_delay zack_12
 clear ii;
 % dfittool
 
-% xele_vs_zeusing_w24 = vertcat(xele_vs_zeusing_w24, xele_vs_zeusing);
+
 
 [p, x] = ecdf(xele_vs_zeusing);
 x_67_xele_vs_zeusing = x(max(find(p<=0.67))-1);
@@ -85,6 +85,10 @@ x_95_xele_vs_zeusing = x(max(find(p<=0.95))-1);
 
 clear p x;
 
+% x_67_xele_vs_zeusing_w25 = horzcat(x_67_xele_vs_zeusing_w25, x_67_xele_vs_zeusing);
+% x_95_xele_vs_zeusing_w25 = horzcat(x_95_xele_vs_zeusing_w25, x_95_xele_vs_zeusing);
+
+% xele_vs_zeusing_w25 = vertcat(xele_vs_zeusing_w25, xele_vs_zeusing);
 
 
 
