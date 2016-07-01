@@ -86,8 +86,12 @@ end
 
 xele_vs_zeusing = result_relate_delay(:,6) - result_relate_delay(:, 2);
 
-clear cath_0_5_timestamp xeon_32016_timestamp zack_12345_timestamp zack_12335_timestamp zack_12325_timestamp zack_22235_timestamp;
-clear common_time_stamp cath_0_5_delay xeon_32016_delay zack_12345_delay zack_12335_delay zack_12325_delay zack_22235_delay;
+clear cath_0_5_timestamp xeon_32016_timestamp;
+clear zack_12345_timestamp zack_12335_timestamp zack_12325_timestamp zack_22235_timestamp;
+clear zeta_12345_timestamp zeta_22235_timestamp;
+clear common_time_stamp cath_0_5_delay xeon_32016_delay;
+clear zack_12345_delay zack_12335_delay zack_12325_delay zack_22235_delay;
+clear zeta_12345_delay zeta_22235_delay;
 clear ii;
 % dfittool
 
