@@ -8,7 +8,7 @@
 
 % zack_12345 = VarName1;
 % zack_12345(:, 2) = num2cell(VarName4);
-
+% 
 % % zack_12335 = VarName1;
 % % zack_12335(:, 2) = num2cell(VarName4);
 % 
@@ -23,7 +23,6 @@
 
 % zeta_22235 = VarName1;
 % zeta_22235(:, 2) = num2cell(VarName4);
-
 
 cath_0_5_timestamp = char(cath_0_5(:, 1));
 xeon_32016_timestamp = char(xeon_32016(:, 1));
@@ -107,6 +106,11 @@ clear p x;
 % x_95_xele_vs_zeusing_w25 = horzcat(x_95_xele_vs_zeusing_w25, x_95_xele_vs_zeusing);
 
 % xele_vs_zeusing_w25 = vertcat(xele_vs_zeusing_w25, xele_vs_zeusing);
+
+% plot(x_67_xele_vs_zeusing_w27);
+% hold on;
+% plot(x_95_xele_vs_zeusing_w27);
+% legend('67%', '95%');
 
 
 
